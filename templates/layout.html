@@ -10,9 +10,9 @@
         <li{% if this._path == '/' %} class="active"{% endif
           %}><a href="{{ '/'|url }}">Welcome</a></li>
         {% for href, title in [
-          ['/blog', 'Blog'],
-          ['/projects', 'Projects'],
-          ['/about', 'About']
+          ['https://fridaysforfuture.de/forderungen/', 'Forderungen'],
+          ['/podcast', 'Podcast'],
+          ['/about', 'Kontakt']
         ] %}
           <li{% if this.is_child_of(href) %} class="active"{% endif
             %}><a href="{{ href|url }}">{{ title }}</a></li>
@@ -24,6 +24,6 @@
     {% block body %}{% endblock %}
   </div>
   <footer>
-    &copy; Copyright 2022 by Fridays for Future Bodensee.
+    &copy; Copyright 2022 by Fridays for Future Bodensee. | <a href="/impressum">Impressum</a> | <a href="/datenschutz">Datenschutzerklärung</a>
   </footer>
 </body>
