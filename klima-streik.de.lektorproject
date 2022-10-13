@@ -1,2 +1,20 @@
 [project]
 name = klima-streik.de
+url = https://klima-streik.de/
+url_style = absolute
+excluded_assets = *.scss
+upscale = false
+
+
+[servers.klima-streik.de]
+name = klimastreik
+url = https://klima-streik.de/
+url_style = absolute
+enabled = yes
+default = yes
+locale = de_DE
+target = rsync://klima@klima-streik.de/srv/www/klima-streik.de/
+
+
+[packages]
+lektor-scss = 1.4.1
