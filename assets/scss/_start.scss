@@ -24,7 +24,10 @@ div.start {
     a {
         color: $font_default;
     }
-
+    a:link, a:visited, a:active {
+        color: $font_accent_4;
+        text-decoration: none;
+    }
     code {
       color: $font_accent_4;
       font-size: $font_size_code;
