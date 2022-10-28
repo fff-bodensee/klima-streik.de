@@ -1,0 +1,16 @@
+@import "_variables";
+
+urlset {
+  background-color: $background_accent_2;
+  url {
+    color: $font_default;
+    &:after {
+      content: '\a';
+      white-space: pre;
+    }
+    &:before {
+      content: '> ';
+      white-space: pre;
+    }
+  }
+}

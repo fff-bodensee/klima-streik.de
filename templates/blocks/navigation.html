@@ -1,0 +1,59 @@
+{% block navigation %}
+  <nav>
+    <ul>
+      {% for title, mapping in bag("navigation").items() %}
+        {% if mapping.visible|default(true) %}
+          {% if not mapping.list_childs %}
+          <li>
+            <a
+              {% if this._path == mapping.href %} class="active" {% endif %}
+              {% if mapping.external | default(false) %}
+                href="{{ mapping.href }}" target="_blank" rel="noopener noreferrer"
+              {% else %}
+                href="{{ mapping.href | url }}"
+              {% endif %}>
+                {{- title -}}
+            </a>
+          {% else %}
+          <li class="dropdown">
+            <button type="button" class="title_dropdown" aria-expanded="false" aria-controls="sweets-dropdown">
+              {{ title }}
+            </button>
+            <ul class="dropdown__menu">
+            {% set sub_menu = mapping['items'].items() %}
+            {% for sub_title, href in sub_menu %}
+              {% if sub_title != "list_namespace" %}
+                <li>
+                  <a
+                  {% if this._path == href %}
+                    {{- ' class="active"' }}
+                  {% endif %} {{- ' ' -}}
+                  href="{{ href }}">
+                    {{- sub_title -}}
+                  </a>
+                </li>
+              {% else %}
+                {% set children = site.get(href).children %}
+                {% for child in children %}
+                  {% if loop.index <= 3 %}
+                    <li>
+                      <a
+                        {% if this._path + '/' == child.url_path %}
+                          {{- ' class="active"' -}}
+                        {% endif %} {{- ' ' -}}
+                        href="{{ child.url_path }}">
+                        {{- child.title -}}
+                      </a>
+                    </li>
+                  {% endif %}
+                {% endfor %}
+              {% endif %}
+            {% endfor %}
+            </ul>
+          {% endif %}
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </nav>
+{% endblock %}

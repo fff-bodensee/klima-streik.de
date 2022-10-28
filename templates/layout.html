@@ -1,30 +1,55 @@
 <!doctype html>
-<meta charset="utf-8">
-<link rel="stylesheet" href="{{ '/css/style.css'|asseturl }}">
-<title>{% block title %}Welcome{% endblock %} — klima-streik.de</title>
+{%- macro titlestring() -%}
+  {%- block title -%}
+    Welcome
+  {%- endblock -%}
+  {{ ' — klima-streik.de' }}
+{%- endmacro -%}
+{%- macro descriptionstring() -%}
+  {%- block description -%}
+    Fridays for Future Bodensee
+  {%- endblock -%}
+  {{ ' — klima-streik.de' }}
+{%- endmacro -%}
+{%- macro cssfile() -%}
+  {%- block scss -%}
+    css/main.min.css
+  {%- endblock -%}
+{%- endmacro -%}
+<html lang="{{ this.alt }}">
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="{{ cssfile()|asseturl }}" />
+  <title>{{- titlestring() -}}</title>
+
+  <meta name="generator" content="lektor" />
+  <meta name="description" content="{{- descriptionstring() -}}" />
+  <meta name="author" content="L3D" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="{{ '/sitemap.xml' | url(external=true) }}" />
+  <meta property="og:url" content="{{ this | url(external=true) }}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="{{- titlestring() -}}" />
+  <meta property="og:description" content="{{- descriptionstring() -}}" />
+</head>
 <body>
   <header>
-    <h1>klima-streik.de</h1>
-    <nav>
-      <ul class="nav navbar-nav">
-        <li{% if this._path == '/' %} class="active"{% endif
-          %}><a href="{{ '/'|url }}">Welcome</a></li>
-        {% for href, title in [
-          ['https://fridaysforfuture.de/forderungen/', 'Forderungen'],
-          ['/podcast', 'Podcast'],
-          ['/spenden', 'Spenden'],
-          ['/about', 'Kontakt']
-        ] %}
-          <li{% if this.is_child_of(href) %} class="active"{% endif
-            %}><a href="{{ href }}">{{ title }}</a></li>
-        {% endfor %}
-      </ul>
-    </nav>
+    <h1 id="top" class="sitetitle"><a href="/">
+      {%- block sitetitle -%}
+        klima-streik.de
+      {%- endblock -%}
+    </a></h1>
+      {%- include "blocks/navigation.html" -%}
   </header>
-  <div class="page">
-    {% block body %}{% endblock %}
+  <div class="
+    {%- block class -%}
+      page
+    {%- endblock -%}">
+    {%- block body -%}
+      <p>Hello World</p>
+    {%- endblock %}
   </div>
   <footer>
-    &copy; Copyright 2022 by Fridays for Future Bodensee. | <a href="/impressum">Impressum</a> | <a href="/datenschutz">Datenschutzerklärung</a>
+    &copy; Copyright {{ none|datetimeformat('YYYY', 'UTC') }} by Fridays for Future Bodensee under <a href="https://github.com/fff-bodensee/klima-streik.de/blob/main/LICENSE">MIT License</a>
   </footer>
 </body>

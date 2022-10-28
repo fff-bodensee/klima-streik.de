@@ -1,4 +1,9 @@
- klima-streik.de
-=================
+ klima-streik.de Website
+=======================
 
-Lektor Website for klima-streik.de
+run server with:
+```bash
+lektor server -f scss -f pretifyhtml
+```
+
+License: [MIT License](LICENSE)

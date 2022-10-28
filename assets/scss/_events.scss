@@ -1,0 +1,120 @@
+div.events {
+    margin: 0 auto;
+    padding: 20px 30px;
+    background: transparent;
+
+    p, ul li {
+      color: $font_default;
+      font-size: $font_size_default;
+    }
+
+    a, a:link, a:visited {
+        text-decoration: none;
+        color: $font_accent_4;
+    }
+
+    a:hover, a:active {
+       color: $font_accent_3;
+    }
+
+    code {
+      color: $font_accent_4;
+      font-size: $font_size_code;
+    }
+
+    .headline a {
+        color: $font_accent_3;
+        font-size: $font_size_h2;
+        text-shadow: 0px 0px 1px black;
+        text-decoration: none;
+    }
+
+    .meta {
+        color: silver;
+        font-style: italic;
+    }
+
+    ul li {
+        padding: 5px 0px;
+    }
+
+    .blog-post {
+        background: rgba(128,128,128,0.15);
+        padding: 16px;
+        margin-top: 50px;
+        box-shadow: 0px 0px 2px 8px rgba(128,128,128,0.1);
+        ul li a {
+            color: $font_default;
+        }
+        ul li a:hover {
+            text-decoration: underline;
+        }
+    }
+
+    h2 {
+        color: $font_accent_3;
+        text-shadow: 0px 0px 1px black;
+    }
+
+    img {
+        max-width: 94%;
+        margin: 3%;
+        box-shadow: 5px 5px 4px 3px grey;
+    }
+}
+
+@media (min-width: $large_view) {
+    div.events {
+        max-width: $large_min_width;
+        p, ul {
+            font-size: $font_size_default_large;
+        }
+        .headline a {
+            font-size: $font_size_h2_large;
+        }
+        code {
+            font-size: $font_size_code_large;
+        }
+        img:hover {
+            box-shadow: 8px 8px 6px 5px silver;
+        }
+    }
+}
+
+@media (max-width: $mobile_view) {
+    div.events {
+        p, ul {
+            font-size: $font_size_default_mobile;
+        }
+        img {
+            max-width: 98%;
+            margin: 1%;
+            box-shadow: 0px 0px 4px 4px rgba(128,128,128,0.6);
+        }
+        code {
+            font-size: $font_size_code_mobile;
+        }
+        .headline a {
+            font-size: $font_size_h2_mobile;
+        }
+    }
+}
+
+@media (max-width: $tiny_view) {
+    div.events {
+        p {
+            font-size: $font_size_default_tiny;
+        }
+        .headline a {
+            font-size: $font_size_h2_tiny;
+        }
+    }
+}
+
+@media (max-width: $pico_view) {
+    div.events {
+        .headline a {
+            font-size: $font_size_h2_pico;
+        }
+    }
+}

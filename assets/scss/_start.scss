@@ -1,0 +1,91 @@
+div.start {
+    margin: 0 auto;
+    padding: 50px 0px;
+    background: transparent;
+    display: flex;
+    .left {
+        flex: 45%;
+        text-align: left;
+        background: rgba(128,128,128,0.15);
+        padding: 12px;
+        box-shadow: 0px 0px 2px 8px rgba(128,128,128,0.1);
+    }
+    .right {
+        flex: 55%;
+    }
+    img {
+        max-width: 100%;
+    }
+
+    p {
+        font-size: $font_size_default;
+        color: $font_default;
+    }
+    a {
+        color: $font_default;
+    }
+
+    code {
+      color: $font_accent_4;
+      font-size: $font_size_code;
+    }
+
+    h2 {
+        color: $font_accent_3;
+        font-size: $font_size_h2;
+        text-shadow: 0px 0px 1px black;
+    }
+}
+
+@media (min-width: $large_view) {
+    div.start {
+        margin: auto;
+        max-width: $large_min_width;
+        .right, .left {
+            flex: 50%;
+        }
+        p {
+            font-size: $font_size_default_large;
+        }
+        code {
+            font-size: $font_size_code_large;
+        }
+
+        h2 {
+            font-size: $font_size_h2_large;
+            text-shadow: 0px 0px 4px black;
+        }
+        img {
+            max-width: 100%;
+        }
+
+    }
+}
+
+@media (max-width: $mobile_view) {
+    div.start {
+        display: initial;
+        p {
+          font-size: $font_size_default_mobile;
+        }
+        code {
+            font-size: $font_size_code_mobile;
+        }
+        .left, .right {
+            text-align: center;
+            margin-top: 40px;
+        }
+        img {
+            max-width: 90%;
+
+        }
+    }
+}
+
+@media (max-width: $tiny_view) {
+    div.start {
+        p {
+            font-size: $font_size_default_tiny;
+        }
+    }
+}

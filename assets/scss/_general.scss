@@ -1,0 +1,14 @@
+body {
+    font-family: $main_font, sans-serif;
+    margin: 25px 25px 50px 25px;
+    background: $background_accent_2;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-size: auto;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 110% 30%;
+    background-size: 120%;
+}

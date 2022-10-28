@@ -1,0 +1,4 @@
+User-Agent: *
+Allow: /
+
+Sitemap: https://klima-streik.de/sitemap.xml

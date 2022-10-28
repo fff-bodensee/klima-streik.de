@@ -1,0 +1,96 @@
+div.page {
+    margin: 0 auto;
+    padding: 20px 30px;
+    background: transparent;
+    p, ul li {
+      color: $font_default;
+      font-size: $font_size_default;
+    }
+
+    code {
+      color: $font_default;
+    }
+
+    a {
+        color: $font_default;
+    }
+    a:link, a:visited, a:active {
+        color: $font_accent_4;
+        text-decoration: none;
+    }
+
+    h1 {
+        color: $font_accent_3;
+        font-size: $font_size_h1;
+        text-shadow: 0px 0px 1px black;
+    }
+    h2 {
+        color: $font_accent_3;
+        font-size: $font_size_h2;
+        text-shadow: 0px 0px 1px black;
+    }
+    img {
+        max-width: 100%;
+    }
+
+    ul li {
+        padding: 5px 0px;
+    }
+
+    .highlight {
+        color: $font_accent_4;
+        font-size: $font_size_code;
+    }
+}
+
+@media (min-width: $large_view) {
+    div.page {
+        margin: auto;
+        max-width: $large_min_width;
+
+        p, ul li {
+            font-size: $font_size_default_large;
+        }
+
+        h1 {
+            font-size: $font_size_h1_large;
+        }
+
+        h2 {
+            font-size: $font_size_h2_large;
+        }
+    }
+}
+
+@media (max-width: $mobile_view) {
+    div.page {
+
+        p, a{
+          font-size: $font_size_default_mobile;
+        }
+
+        code {
+            font-size: $font_size_code_mobile;
+        }
+
+        img {
+            max-width: 90%;
+        }
+
+        h1 {
+            font-size: $font_size_h1_mobile;
+        }
+
+        h2 {
+            font-size: $font_size_h2_mobile;
+        }
+    }
+}
+
+@media (max-width: $tiny_view) {
+    div.page {
+        p, a{
+          font-size: $font_size_default_tiny;
+        }
+    }
+}

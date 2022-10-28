@@ -1,0 +1,26 @@
+{
+  "Willkommen": {
+    "href": "/"
+  },
+  "Forderungen": {
+    "href": "https://fridaysforfuture.de/forderungen/",
+    "external": true
+  },
+  "Podcast": {
+    "href": "/podcast"
+  },
+  "Bilder": {
+    "href": "/bilder"
+  },
+  "Spenden": {
+    "href": "/spenden"
+  },
+  "Kontakt": {
+    "list_childs": true,
+    "items": {
+      "Kontakt": "/kontakt",
+      "Datenschutz": "/datenschutz",
+      "Impressum": "/impressum"
+    }
+  }
+}

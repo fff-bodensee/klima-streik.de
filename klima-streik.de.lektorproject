@@ -4,7 +4,7 @@ url = https://klima-streik.de/
 url_style = absolute
 excluded_assets = *.scss
 upscale = false
-
+output_path = temp/builds/winkekatze.tv/
 
 [servers.klima-streik.de]
 name = klimastreik
@@ -15,6 +15,15 @@ default = yes
 locale = de_DE
 target = rsync://klima@klima-streik.de/srv/www/klima-streik.de/
 
+[alternatives.de]
+name = Deutsch
+primary = yes
+locale = de_DE
+
+[alternatives.en]
+name = Englisch
+locale = en_US
+url_prefix = /en/
 
 [packages]
 lektor-scss = 1.4.1
