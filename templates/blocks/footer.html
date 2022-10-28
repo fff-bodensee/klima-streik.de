@@ -1,0 +1,28 @@
+<footer>
+  <p>
+    Fridays for Future - Ortsgruppe Bodensee auf social Media
+    <br>
+    {% for ziel, name, icon in [
+      ['https://twitter.com/fff_bodensee/', 'Twitter', '/images/icons/social/twitter.svg'],
+      ['https://www.instagram.com/fridaysforfuture.bodensee/', 'Instagram', '/images/icons/social/instagram.svg'],
+      ['https://www.tiktok.com/@fff.bodensee', 'TikTok', '/images/icons/social/tiktok.svg'],
+      ['https://youtube.com/@fff.bodensee', 'YouTube', '/images/icons/social/youtube.svg'],
+      ['https://t.me/FFFBodenseeInfo', 'Telegram', '/images/icons/social/telegram.svg'],
+      ['https://chat.whatsapp.com/L9AS4bUxayF9KiiXiDZw5', 'Whatsapp Infogruppe', '/images/icons/social/whatsapp.svg'],
+      ['https://github.com/fff-bodensee/', 'Github', '/images/icons/social/github.svg']
+    ] %}
+      <a href="{{- ziel -}}" title="{{- name -}}" rel="noopener noreferrer" target="_blank">
+        {% if icon|asseturl is defined %}
+          <img alt="{{- name -}}" class="footer__social_logo" src="{{- icon|asseturl -}}" width="142"/>
+        {% else %}
+          {{ name }}
+        {% endif %}
+      </a>
+    {%- endfor %}
+  </p>
+  <a class="footer__navlink" href="{{ '/impressum'|url }}">Impressum</a>
+   |
+  <a class="footer__navlink" href="{{ '/datenschutz'|url }}">Datenschutz</a>
+<br/>
+  <p>&copy; Copyright {{ none|datetimeformat('YYYY', 'UTC') }} by Fridays for Future Bodensee under <a href="https://github.com/fff-bodensee/klima-streik.de/blob/main/LICENSE">MIT License</a></p>
+  </footer>

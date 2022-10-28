@@ -49,7 +49,5 @@
       <p>Hello World</p>
     {%- endblock %}
   </div>
-  <footer>
-    &copy; Copyright {{ none|datetimeformat('YYYY', 'UTC') }} by Fridays for Future Bodensee under <a href="https://github.com/fff-bodensee/klima-streik.de/blob/main/LICENSE">MIT License</a>
-  </footer>
+  {%- include "blocks/footer.html" -%}
 </body>
