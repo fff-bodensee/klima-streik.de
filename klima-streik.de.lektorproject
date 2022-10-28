@@ -18,3 +18,4 @@ target = rsync://klima@klima-streik.de/srv/www/klima-streik.de/
 
 [packages]
 lektor-scss = 1.4.1
+lektor-html-pretify = 1.0.7
