@@ -1,0 +1,22 @@
+{
+  "Hallo": {
+    "href": "/"
+  },
+  "Infos": {
+    "list_childs": true,
+    "items": {
+      "Forderungen 🔗": "https://fridaysforfuture.de/forderungen/",
+      "Podcast": "/podcast",
+      "Bilder": "/bilder",
+      "Spenden": "/spenden"
+    }
+  },
+  "Kontakt": {
+    "list_childs": true,
+    "items": {
+      "Kontakt": "/kontakt",
+      "Datenschutz": "/datenschutz",
+      "Impressum": "/impressum"
+    }
+  }
+}
