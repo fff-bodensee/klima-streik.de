@@ -17,3 +17,6 @@
 {%- block scss -%}
   css/start.min.css
 {%- endblock -%}
+{%- block description -%}
+  {{ this.description | default('Fridays for Future Bodensee') }}
+{%- endblock -%}

@@ -27,7 +27,6 @@ header {
     nav {
         grid-template-rows: auto 1fr auto;
         padding: 0 1rem;
-        position: sticky;
         display: grid;
         place-items: flex-start;
         margin-left: -25px;

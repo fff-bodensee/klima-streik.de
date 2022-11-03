@@ -5,11 +5,13 @@
   {%- endblock -%}
   {{ ' — klima-streik.de' }}
 {%- endmacro -%}
+{%- set pageurl = './' | url(external=true) -%}
 {%- macro descriptionstring() -%}
   {%- block description -%}
     Fridays for Future Bodensee
   {%- endblock -%}
-  {{ ' — klima-streik.de' }}
+  {{- ' — ' -}}
+  {{ pageurl[8:] }}
 {%- endmacro -%}
 {%- macro cssfile() -%}
   {%- block scss -%}

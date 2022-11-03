@@ -15,6 +15,9 @@ footer {
     a:hover {
         color: $font_accent_footer_linkhover;
     }
+        .footer__social_logo{
+            max-width: 13%;
+        }
     .footer__social_logo:hover {
         filter: drop-shadow(1px 1px 2px $font_accent_footer_link);
     }
@@ -29,10 +32,6 @@ footer {
 @media (max-width: $mobile_view) {
     footer {
         font-size: $font_size_default_mobile;
-        color: silver;
-        a {
-            color: grey;
-        }
         a:link, a:visited {
             color: $font_accent_footer_link;
         }
