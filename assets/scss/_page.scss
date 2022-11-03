@@ -15,19 +15,27 @@ div.page {
         color: $font_default;
     }
     a:link, a:visited, a:active {
-        color: $font_accent_4;
+        color: $font_accent_link;
         text-decoration: none;
+    }
+
+    a:hover {
+        color: $font_accent_linkhover;
     }
 
     h1 {
         color: $font_accent_3;
         font-size: $font_size_h1;
-        text-shadow: 0px 0px 1px black;
+        @if $headlineshadow {
+            text-shadow: 0px 0px 1px black;
+        }
     }
     h2 {
         color: $font_accent_3;
         font-size: $font_size_h2;
-        text-shadow: 0px 0px 1px black;
+        @if $headlineshadow {
+            text-shadow: 0px 0px 1px black;
+        }
     }
     img {
         max-width: 100%;

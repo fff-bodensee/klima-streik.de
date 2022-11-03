@@ -6,9 +6,11 @@ div.start {
     .left {
         flex: 45%;
         text-align: left;
-        background: rgba(128,128,128,0.15);
         padding: 12px;
-        box-shadow: 0px 0px 2px 8px rgba(128,128,128,0.1);
+        @if $shadow {
+            background: rgba(128,128,128,0.15);
+            box-shadow: 0px 0px 2px 8px rgba(128,128,128,0.1);
+        }
     }
     .right {
         flex: 55%;
@@ -25,8 +27,11 @@ div.start {
         color: $font_default;
     }
     a:link, a:visited, a:active {
-        color: $font_accent_4;
+        color: $font_accent_link;
         text-decoration: none;
+    }
+    a:hover {
+        color: $font_accent_linkhover;
     }
     code {
       color: $font_accent_4;
@@ -36,7 +41,9 @@ div.start {
     h2 {
         color: $font_accent_3;
         font-size: $font_size_h2;
-        text-shadow: 0px 0px 1px black;
+        @if $headlineshadow{
+            text-shadow: 0px 0px 1px black;
+        }
     }
 }
 
@@ -56,7 +63,9 @@ div.start {
 
         h2 {
             font-size: $font_size_h2_large;
-            text-shadow: 0px 0px 4px black;
+            @if $headlineshadow{
+                text-shadow: 0px 0px 4px black;
+            }
         }
         img {
             max-width: 100%;

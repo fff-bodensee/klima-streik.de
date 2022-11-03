@@ -1,5 +1,6 @@
-$background_accent_2: rgb(27, 115, 64) url(/images/erde_hell.svg);
 $background_accent_1: rgb(29, 166, 74);
+$background_accent_2: white;
+$background_accent_footer: rgb(27, 115, 64);
 $menu_background_color: transparent;
 $menu_background_dropdown_color: rgba(255,255,255,0.8);
 $menu_accent_hover: #ffc000;
@@ -7,11 +8,16 @@ $menu_box_background: transparent;
 
 $font_accent_1: white;
 $font_accent_2: rgba(84, 150, 112, 1);
-$font_accent_3: #ffc000;
+$font_accent_3: rgb(27, 115, 64);
 $font_accent_4: rgb(247, 196, 24);
+$font_accent_link: rgb(84, 150, 112);
+$font_accent_linkhover: rgb(144, 211, 237);
+$font_accent_footer_link: rgb(247, 196, 24);
+$font_accent_footer_linkhover: rgb(144, 211, 237);
 $font_submenu: black;
 $font_menu: white;
-$font_default: white;
+$font_default: black;
+$font_footer: white;
 
 $font_size_default: 1.3em;
 $font_size_default_large: 2.2em;
@@ -46,3 +52,5 @@ $pico_view: 320px;
 $menu_text_transform: none;
 $hide_footer: false;
 $show_mobile_menu: false;
+$shadow: false;
+$headlineshadow: false;
