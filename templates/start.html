@@ -8,7 +8,9 @@
       {{ this.body }}
     </div>
     <div class="right">
-      <img src="{{ this.image }}" />
+      {% for element in this.image.blocks %}
+      <img src="{{ element.image }}" />
+      {% endfor %}
     </div>
 {% endblock -%}
 {%- block class -%}

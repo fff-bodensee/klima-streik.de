@@ -2,8 +2,8 @@
   <p>
     <h2> Fridays for Future - Ortsgruppe Bodensee auf social Media</h2>
     <br>
+    {#  ['https://twitter.com/fff_bodensee/', 'Twitter', '/images/icons/social/twitter.svg'], #}
     {% for ziel, name, icon in [
-      ['https://twitter.com/fff_bodensee/', 'Twitter', '/images/icons/social/twitter.svg'],
       ['https://www.instagram.com/fridaysforfuture.bodensee/', 'Instagram', '/images/icons/social/instagram.svg'],
       ['https://www.tiktok.com/@fff.bodensee', 'TikTok', '/images/icons/social/tiktok.svg'],
       ['https://youtube.com/@fff.bodensee', 'YouTube', '/images/icons/social/youtube.svg'],
@@ -24,5 +24,5 @@
    |
   <a class="footer__navlink" href="{{ '/datenschutz'|url }}">Datenschutz</a>
 <br/>
-  <p>&copy; Copyright {{ none|datetimeformat('YYYY', 'UTC') }} by Fridays for Future Bodensee under <a href="https://github.com/fff-bodensee/klima-streik.de/blob/main/LICENSE">MIT License</a></p>
+  <p>&copy; Copyright {{ none|datetimeformat('YYYY') }} by Fridays for Future Bodensee under <a href="https://github.com/fff-bodensee/klima-streik.de/blob/main/LICENSE">MIT License</a></p>
   </footer>

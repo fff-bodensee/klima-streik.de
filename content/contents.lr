@@ -4,7 +4,10 @@ _model: start
 ---
 body:
 
- Hey , wir sind Fridays for Future Bodensee, ein lokaler Ableger der Fridays for Future Bewegung.
+Hey , wir sind Fridays for Future Bodensee, ein lokaler Ableger der Fridays for Future Bewegung.
+
+**Unsere nächste Demonstration** findet am **15. September 2023** um 15:00 Uhr in Friedrichshafen statt.
+Wir starten am Franziskusplatz *(nähe Stadtbahnhof)* und gehen gemeinsam durch die Innenstadt über den Hafen bis zur Musikmuschel. An der Musikmuschel erwartet euch die Band Fraktion161 so wie ein paar Redebeiträge die euch erzählen, warum wir auf der Straße stehen und was wir erreichen wollen. Wir wollen nämlich noch lange einen Planeten haben, auf dem wir friedlich und gesund Miteinander Leben können.
 
 Unser politisches Ziel ist es, in Zukunft auch noch friedlich auf diesem Planeten leben zu können. Hört sich einfach an, ist es aber leider nicht. Wer sich intensiv mit der Klimakrise auseinandersetzt wird verstehen was wir meinen. Allen anderen empfehlen wir den IPCC-Bericht zur Lektüre und das Auseinandersetzen mit Klimawissenschaftler*Innen und der Klimafolgenforschung.
 
@@ -12,7 +15,16 @@ Wir sind eine Protestbewegung. Lokal organisieren wir Klimademonstrationen. Mit 
 
 Wenn auch du gegen die Klimakrise aktiv werden möchtest, komm gerne [in unsere Infogruppen](/kontakt/) und auf die nächste Demonstration. Oder hilf doch einfach selber im Orgateam. Wir freuen uns immer über Hilfe und Menschen, die mitgestalten möchten. 
 ---
+image:
+
+#### image_start ####
+image: /images/fff_demo_2023-09-15.jpg
+----
+alt: Demo Aufruf zum 15.9.2023
+#### image_start ####
 image: /images/fff.jpg
+----
+alt: Fridays for Future Demo in Friedrichshafen
 ---
 description:
 
