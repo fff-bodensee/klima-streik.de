@@ -26,5 +26,5 @@ locale = en_US
 url_prefix = /en/
 
 [packages]
-lektor-scss = 1.4.1
-lektor-html-pretify = 1.0.7
+lektor-scss = 1.5.0
+lektor-html-pretify = 2.0.0
