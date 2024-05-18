@@ -33,6 +33,8 @@
   <meta property="og:type" content="website" />
   <meta property="og:title" content="{{- titlestring() -}}" />
   <meta property="og:description" content="{{- descriptionstring() -}}" />
+  {% block special_header %}
+  {% endblock %}
 </head>
 <body>
   <header>
