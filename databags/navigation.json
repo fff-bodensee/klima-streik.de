@@ -2,6 +2,9 @@
   "Willkommen": {
     "href": "/"
   },
+  "Kommunalwahl 2024": {
+    "href": "/kommunalwahl"
+  },
   "Forderungen 🔗": {
     "href": "https://fridaysforfuture.de/forderungen/",
     "external": true
