@@ -5,6 +5,7 @@
   "Infos": {
     "list_childs": true,
     "items": {
+      "Kommunalwahl": "/kommunalwahl",
       "Forderungen 🔗": "https://fridaysforfuture.de/forderungen/",
       "Podcast": "/podcast",
       "Bilder": "/bilder",
